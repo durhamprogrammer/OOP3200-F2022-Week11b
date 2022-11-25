@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Vector;
@@ -58,8 +59,9 @@ public class ShapeViewController implements Initializable
     }
 
     @FXML
-    void DrawShapeButton_Clicked(ActionEvent event) {
-
+    void DrawShapeButton_Clicked(ActionEvent event) throws IOException
+    {
+        SceneManager.Instance().changeScene(event, "vector2-canvas.fxml");
     }
 
 
