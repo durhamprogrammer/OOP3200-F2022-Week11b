@@ -16,7 +16,7 @@
     <children>
         <BorderPane layoutX="186.0" layoutY="86.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <right>
-                <GridPane minWidth="-Infinity" prefWidth="300.0" BorderPane.alignment="CENTER">
+                <GridPane minWidth="-Infinity" prefHeight="420.0" prefWidth="335.0" BorderPane.alignment="CENTER">
                     <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -30,6 +30,8 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
                         <Label text="X:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
@@ -85,6 +87,16 @@
                                 <Insets left="5.0" right="5.0" />
                             </GridPane.margin>
                         </TextField>
+                  <Button fx:id="DrawShapeButton" mnemonicParsing="false" onAction="#DrawShapeButton_Clicked" text="Draw Shape" visible="false" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Label text="Select at least two Vectors  to draw  a Shape" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
                     </children>
                     <BorderPane.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

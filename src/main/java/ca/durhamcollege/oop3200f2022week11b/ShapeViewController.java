@@ -17,6 +17,9 @@ public class ShapeViewController implements Initializable
     private Button CalculateDistanceButton;
 
     @FXML
+    private Button DrawShapeButton;
+
+    @FXML
     private Label TotalDistanceLabel;
 
     @FXML
@@ -54,6 +57,11 @@ public class ShapeViewController implements Initializable
         TotalDistanceTextView.setText(Float.toString(distance));
     }
 
+    @FXML
+    void DrawShapeButton_Clicked(ActionEvent event) {
+
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
@@ -70,6 +78,15 @@ public class ShapeViewController implements Initializable
             else
             {
                 hideDistanceUI();
+            }
+
+            if(Vector2ListView.getSelectionModel().getSelectedItems().size() >= 2)
+            {
+                DrawShapeButton.setVisible(true);
+            }
+            else
+            {
+                DrawShapeButton.setVisible(false);
             }
         });
 
